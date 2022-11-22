@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Andreza Akyiama - Salão Beauty</title>
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+  <!-- Navbar -->
+  <nav class="Navbar">
+    <img class="Logo" src="/img/logo.jpeg" alt="Imagen" />
+
+    <ul class="Nav-Menu">
+        <li class="Nav-Item">
+            <a href="index.html" class="Nav-Link">Home</a>
+        </li>
+
+        <li class="Nav-Item">
+            <a href="#sobre" class="Nav-Link">Sobre o Salão</a>
+        </li>
+
+        <li class="Nav-Item">
+            <a href="#serviços" class="Nav-Link">Nossos Serviços</a>
+        </li>
+
+        <li class="Nav-Item">
+            <a href="#avaliacoes" class="Nav-Link">Avaliações</a>
+        </li>
+
+        <li class="Nav-Item">
+            <a href="#contatos" class="Nav-Link">Contatos</a>
+        </li>
+
+        <li class="Nav-Favicon">
+            <a href="mailto:salonbeautycidadetiradentes@gmail.com">
+                <img src="/img/o-email.png" alt="" />
+            </a>
+        </li>
+
+        <li class="Nav-Favicon">
+            <a href="https://www.facebook.com/salonbeautycidadetiradentes">
+                <img src="/img/facebook.png" alt="" />
+            </a>
+        </li>
+
+        <li class="Nav-Favicon">
+            <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">
+                <img src="/img/whatsapp.png" alt="" />
+            </a>
+        </li>
+
+        <li class="Nav-Favicon">
+          <a href="https://instagram.com/salonbeautycidadetiradentes?igshid=NDk5N2NlZjQ=">
+              <img src="/img/icons8-instagram-50.png" alt="" />
+          </a>
+      </li>
+    </ul>
+    <div class="caixa-container">
+        <span class="Bar"></span>
+        <span class="Bar"></span>
+        <span class="Bar"></span>
+    </div>
+</nav>
+<!-- Navbar fim-->
+    </header>
+    <main>
+      <section>
+        <div class="container-fluid">
+            <!-- slider -->
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/teste1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+      
+                  <!-- tirar classe d-none -->
+      
+                  <div class="carousel-caption d-md-block">
+                    <!-- <h2></h5>
+                      <p></p>
+                      <a href="#" class="main-btn"></a> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/teste2.jpg" class="d-block w-100" alt="Engenharia de software">
+                  <div class="carousel-caption d-md-block">
+                    <!-- <h2></h5>
+                      <p></p>
+                      <a href="#" class="main-btn"></a> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/maquiagem.jpg" class="d-block w-100" alt="Manutenção em software">
+                  <div class="carousel-caption d-md-block">
+                    <!-- <h2></h5>
+                      <p></p>
+                      <a href="#" class="main-btn"></a> -->
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+
+          <section id="sobre">
+            <!-- Sobre a empresa -->
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Sobre o Salão Beauty</h3>
+              <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy"
+                  style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFR-bEy4GA&#x2F;view?embed"
+                  allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+              </div>
+              <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFR-bEy4GA&#x2F;view?utm_content=DAFR-bEy4GA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                target="_blank" rel="noopener">Brown Beauty Product Launch Website</a>
+            </div>
+          </section>
+
+          <section id="serviços">
+            <h3 class="main-title">Nossos Serviços Beauty</h3>
+            <div class="caixinha">
+                <!-- Card 1 -->
+                <div class="card card-1">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <img src="/img/card-cabelo.jpg" class="card-img" />
+                    </div>
+                    <!-- Card Header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- <h3 class="card-servico">Mclovin</h3> -->
+                        <h2 class="card-titulo">Cabelo</h2>
+                        <p class="card-texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quidem quam beatae, eius ipsum possimus
+                            veniam.
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+
+                    <!-- Card-Footer -->
+                    <div class="card-footer">
+                        <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">Agendar</a>
+                    </div>
+                    <!-- Card-Footer -->
+                </div>
+                <!--Card 1  -->
+
+                 <!-- Card 2 -->
+                 <div class="card card-2">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <img src="/img/card-maquiagem.jpg" class="card-img" />
+                    </div>
+                    <!-- Card Header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- <h3 class="card-servico">Jack</h3> -->
+                        <h2 class="card-titulo">Maquiagem</h2>
+                        <p class="card-texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quidem quam beatae, eius ipsum possimus
+                            veniam.
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+
+                    <!-- Card-Footer -->
+                    <div class="card-footer">
+                        <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">Agendar</a>
+                    </div>
+                    <!-- Card-Footer -->
+                </div>
+                <!--Card 2  -->
+
+                 <!-- Card 3 -->
+                 <div class="card card-3">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <img src="/img/card-unha.jpg" class="card-img" />
+                    </div>
+                    <!-- Card Header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- <h3 class="card-servico">Miltinho</h3> -->
+                        <h2 class="card-titulo">Unha</h2>
+                        <p class="card-texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quidem quam beatae, eius ipsum possimus
+                            veniam.
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+
+                    <!-- Card-Footer -->
+                    <div class="card-footer">
+                        <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">Agendar</a>
+                    </div>
+                    <!-- Card-Footer -->
+                </div>
+                <!--Card 3  -->
+
+                 <!-- Card 4 -->
+                 <div class="card card-4">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <img src="/img/card-sobrancelha.png" class="card-img" />
+                    </div>
+                    <!-- Card Header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- <h3 class="card-servico">Bundão</h3> -->
+                        <h2 class="card-titulo">Sobrancelha</h2>
+                        <p class="card-texto">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quidem quam beatae, eius ipsum possimus
+                            veniam.
+                        </p>
+                    </div>
+                    <!-- Card Body -->
+
+                    <!-- Card-Footer -->
+                    <div class="card-footer">
+                        <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">Agendar</a>
+                    </div>
+                    <!-- Card-Footer -->
+                </div>
+                <!--Card 4 -->
+
+                 <!-- Card 5 -->
+                 <div class="card card-5">
+                  <!-- Card header -->
+                  <div class="card-header">
+                      <img src="/img/pedicure.jpeg" class="card-img" />
+                  </div>
+                  <!-- Card Header -->
+
+                  <!-- Card Body -->
+                  <div class="card-body">
+                      <!-- <h3 class="card-servico">Bundão</h3> -->
+                      <h2 class="card-titulo">Pedicure</h2>
+                      <p class="card-texto">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quidem quam beatae, eius ipsum possimus
+                          veniam.
+                      </p>
+                  </div>
+                  <!-- Card Body -->
+
+                  <!-- Card-Footer -->
+                  <div class="card-footer">
+                      <a href="https://wa.me/5511996901504?text=Enviar%20uma%20mensagem%20">Agendar</a>
+                  </div>
+                  <!-- Card-Footer -->
+              </div>
+              <!--Card 5 -->
+            </div>
+          </section>
+
+          <!-- Depoimentos -->
+
+          <h3 class="main-title">O que estão falando dos nossos serviços</h3>
+          <section class="depoimentos" id="avaliacoes">
+      
+            <div class="cartas">
+            <img class="user" src="/img/amanda.jpg" alt="">
+            <h3>Amanda Ferreira</h3>
+            <div class="stars">
+                <img class="star" src="/img/star (1).svg" alt="">
+                <img class="star" src="/img/star (1).svg" alt="">
+                <img class="star" src="/img/star (1).svg" alt="">
+                <img class="star" src="/img/star (1).svg" alt="">
+                <img class="star" src="/img/star (1).svg" alt="">
+            </div>
+            
+            <p class="texto">Otimo, adorei a simpatia, ótimo preço, ótima profissional, com certeza vou retornar.</p>
+            </div>
+            
+            <div class="cartas">
+                <img class="user" src="/img/camila.jpg" alt="">
+                <h3>Camila Farias</h3>
+                <div class="stars">
+                    <img class="star" src="/img/star (1).svg" alt="">
+                    <img class="star" src="/img/star (1).svg" alt="">
+                    <img class="star" src="/img/star (1).svg" alt="">
+                    <img class="star" src="/img/star (1).svg" alt="">
+                    <img class="star" src="/img/star (1).svg" alt="">
+                </div>
+                
+                <p class="texto">profissional excelente, super rapida e cuidadosa. maravilhosaa voltarei mais vezes. </p>
+                </div>
+            
+                <div class="cartas">
+                    <img class="user" src="/img/Elizangela.jpg" alt="">
+                    <h3>Elizangela Moura </h3>
+                    <div class="stars">
+                        <img class="star" src="/img/star (1).svg" alt="">
+                        <img class="star" src="/img/star (1).svg" alt="">
+                        <img class="star" src="/img/star (1).svg" alt="">
+                        <img class="star" src="/img/star (1).svg" alt="">
+                        <img class="star" src="/img/star (1).svg" alt="">
+                    </div>
+                    
+                    <p class="texto">Amei muito bom atendimento. nota 10. Atendimento no horário marcado, e adorei o resultado meu cabelo e da minha filha ficou lindo perfeito e minha unha perfeita.</p>
+                    </div>
+            
+                    <div class="cartas">
+                        <img class="user" src="/img/maria.jpg" alt="">
+                        <h3>Maria Isabel </h3>
+                        <div class="stars">
+                            <img class="star" src="/img/star (1).svg" alt="">
+                            <img class="star" src="/img/star (1).svg" alt="">
+                            <img class="star" src="/img/star (1).svg" alt="">
+                            <img class="star" src="/img/star (1).svg" alt="">
+                            <img class="star" src="/img/star (1).svg" alt="">
+                        </div>
+                        
+                        <p class="texto">Ótimo atendimento...Não indico outra... todas são educadas e excelentes profissionais. Andressa não te troco por nada.Bjsss</p>
+                        </div>
+            
+                        <div class="cartas">
+                            <img class="user" src="/img/nanda.jpg" alt="">
+                            <h3>Nanda Guedes</h3>
+                            <div class="stars">
+                                <img class="star" src="/img/star (1).svg" alt="">
+                                <img class="star" src="/img/star (1).svg" alt="">
+                                <img class="star" src="/img/star (1).svg" alt="">
+                                <img class="star" src="/img/star (1).svg" alt="">
+                                <img class="star" src="/img/star (1).svg" alt="">
+                            </div>
+                            
+                            <p class="texto">Atendimento nota 10. A equipe esta de parabéns, amei tudo. voltarei em breve. <p>
+                            </div>
+            
+                            <div class="cartas">
+                                <img class="user" src="/img/karla.jpg" alt="">
+                                <h3>Karla Vas</h3>
+                                <div class="stars">
+                                    <img class="star" src="/img/star (1).svg" alt="">
+                                    <img class="star" src="/img/star (1).svg" alt="">
+                                    <img class="star" src="/img/star (1).svg" alt="">
+                                    <img class="star" src="/img/star (1).svg" alt="">
+                                    <img class="star" src="/img/star (1).svg" alt="">
+                                </div>
+                                
+                                <p class="texto">Até que enfim achei um salão na cidade Tiradentes com qualidade no serviço, bom preço, um bom ambiente, profissionais acolhedores e simpáticos.Amei!!! super recomendo <p>
+                                </div>
+            
+            </section>
+            <!-- Fim dos depoimentos -->
+
+          <section id="contatos">
+            <!-- novidades -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre dicas e promoções</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+            <input type="submit" id="news-btn" value="Inscrever" style="background-color: #ff5da3;">
+          </form>
+        </div>
+      </div>
+      
+
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-tile">Ligue para:</span> (55) 11 99690-1504</p>
+            <p><span class="contact-tile">Horários:</span> 10:00 - 19:00</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-tile">Envie um email:</span> salonbeautycidadetiradentes@gmail.com</p>
+          </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-tile">Venha tomar um café:</span> R. Ernesto Cerreti, 584 - Cidade Tiradentes, São Paulo - SP, 08470-220</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+          <div class="col-md-6" id="contact-form">
+            <form action="">
+              <input type="text" class="form-control" placeholder="E-mail" name="email">
+              <input type="text" class="form-control" placeholder="Assunto" name="subject">
+              <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+              <input type="submit" class="main-btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Desenvolvido pela empresa Ascenty &copy; 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+          </section>
+
+
+    </main>
+  
+    <script src="scripty.js"></script>
+</body>
+</html>
