@@ -9,8 +9,9 @@
 
 
 body {
-  background-color: whitesmoke;
+  background-color: hsl(0, 0%, 94%);
   font-family: 'Roboto', sans-serif;
+  
 }
 
 header {
@@ -22,19 +23,28 @@ li {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 18px;
-font-weight: 500px;  
+  font-weight: 500px;  
 }
 
 a:hover{
-color: black;
+color: white;
 text-decoration: none;
 transition: 0.5s ease;
-color: white;
+opacity: 0.8;
 }
-
+#navbarbtn:hover
+{
+  padding: 20px;
+  background-color: #ff83b9;
+  border-radius: 10px;
+}
+.marginleft
+{
+  margin-left: 20px;
+}
 /* Estilo do navbar */
 .Navbar {
   min-height: 70px;
