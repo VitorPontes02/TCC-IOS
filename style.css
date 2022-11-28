@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#navbarbtn:hover
+.navbarbtn:hover
 {
   padding: 20px;
   background-color: #ff83b9;
