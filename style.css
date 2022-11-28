@@ -35,6 +35,22 @@ text-decoration: none;
 transition: 0.5s ease;
 opacity: 0.8;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(192, 192, 192);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 225);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+
 #navbarbtn:hover
 {
   padding: 20px;
@@ -328,6 +344,37 @@ opacity: 0.8;
 }
 
 /* Final dos card de serviço */
+
+/* portifolio */
+
+.project-box {
+  margin-bottom: 30px;
+}
+
+#filter-btn-box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#portfolio-area .filter-btn {
+  color: #444;
+  border: 1px solid #444;
+  background-color: pink;
+  text-transform: none;
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+  color: #FFF;
+  border: 1px solid #ff00c8;
+  background-color: #ff6de7;
+}
+
 
 /* Depoimentos */
 

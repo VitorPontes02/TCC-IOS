@@ -36,23 +36,23 @@
 
       <ul class="Nav-Menu">
         <li class="Nav-Item">
-          <a href="index.html" class="Nav-Link" id="navbarbtn">Home</a>
+          <a href="#" class="Nav-Link nav-item navbarbtn" id="home-menu">Home</a>
         </li>
 
         <li class="Nav-Item">
-          <a href="#sobre" class="Nav-Link" id="navbarbtn">Sobre o Salão</a>
+          <a href="#" class="Nav-Link nav-item navbarbtn" id="about-menu">Sobre o Salão</a>
         </li>
 
         <li class="Nav-Item">
-          <a href="#serviços" class="Nav-Link" id="navbarbtn">Nossos Serviços</a>
+          <a href="#" class="Nav-Link nav-item navbarbtn" id="services-menu">Nossos Serviços</a>
         </li>
 
         <li class="Nav-Item">
-          <a href="#avaliacoes" class="Nav-Link" id="navbarbtn">Avaliações</a>
+          <a href="#" class="Nav-Link nav-item navbarbtn" id="avaliacoes-menu">Avaliações</a>
         </li>
 
         <li class="Nav-Item">
-          <a href="#contatos" class="Nav-Link" id="navbarbtn">Contatos</a>
+          <a href="#" class="Nav-Link nav-item navbarbtn" id="contact-menu">Contatos</a>
         </li>
 
         <li class="Nav-Favicon">
@@ -89,7 +89,7 @@
   </header>
   <main>
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid" >
         <!-- slider -->
         <div id="mainSlider" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -125,6 +125,9 @@
                       <a href="#" class="main-btn"></a> -->
               </div>
             </div>
+
+
+
           </div>
           <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,7 +161,7 @@
             </div>
     </section>
 
-    <section id="serviços">
+    <section id="services-area">
       <h3 class="main-title">Nossos Serviços Beauty</h3>
       <div class="caixinha">
         <!-- Card 1 -->
@@ -301,12 +304,50 @@
         </div>
         <!--Card 5 -->
       </div>
+
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="cortes-btn">Cortes</button>
+              <button class="main-btn filter-btn" id="maquiagem-btn">Maquiagem</button>
+              <button class="main-btn filter-btn" id="manicure-btn">Manicure</button>
+            </div>
+            <div class="col-md-4 project-box cortes">
+              <img src="img/cabelo_conheca.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 project-box maquiagem">
+              <img src="img/maquiagem_conheca.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 project-box cortes">
+              <img src="img/cabelo_conheca.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <div class="col-md-4 project-box manicure">
+              <img src="img/manicure_conheca.jpg" class="img-fluid" alt="Projeto 4">
+            </div>
+            <div class="col-md-4 project-box manicure">
+              <img src="img/manicure_conheca.jpg" class="img-fluid" alt="Projeto 5">
+            </div>
+            <div class="col-md-4 project-box cortes">
+              <img src="img/cabelo_conheca.jpg" class="img-fluid" alt="Projeto 6">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </section>
 
     <!-- Depoimentos -->
 
-    <h3 class="main-title">O que estão falando dos nossos serviços</h3>
-    <section class="depoimentos" id="avaliacoes">
+    <h3 class="main-title" id="avaliacoes-area">O que estão falando dos nossos serviços</h3>
+    <section class="depoimentos" >
 
       <div class="cartas">
         <img class="user" src="/img/amanda.jpg" alt="">
@@ -400,7 +441,7 @@
     </section>
     <!-- Fim dos depoimentos -->
 
-    <section id="contatos">
+    <section id="contact-area">
       <!-- novidades -->
       <div id="news-area">
         <div class="container">
@@ -408,7 +449,7 @@
             <h3 class="main-title">Fique por dentro das novidades</h3>
           </div>
           <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre dicas e promoções</p>
-          <form action="">
+          <form action="" style="padding-bottom:10px;">
             <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
             <input type="submit" id="news-btn" value="Inscrever" style="background-color: #ff5da3;">
           </form>
@@ -469,6 +510,8 @@
 
   </main>
 
+  <script src="jquery.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
   <script src="scripty.js"></script>
 </body>
 
