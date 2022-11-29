@@ -51,7 +51,7 @@ let navBtn = $('.nav-item');
 
   let bannerSection = $('#mainSlider');
   let aboutSection = $('#about-area');
-  let servicesSection = $('#services-area');
+  let servicesSection = $('#service-area');
   let avaliacoesSection = $('#avaliacoes-area');
   let portfolioSection = $('#portfolio-area');
   let contactSection = $('#contact-area');
@@ -77,6 +77,6 @@ let navBtn = $('.nav-item');
     }
 
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(scrollTo).offset().top - 70
-    }, 1500);
+        scrollTop: $(scrollTo).offset().top - 20
+    }, 1200);
   });
